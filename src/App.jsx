@@ -1,13 +1,18 @@
-import { useEffect } from "react";
 import Header from "./components/Header";
 import Meals from "./components/Meals";
+import Cart from "./components/Cart";
+import { CartContextProvider } from "./components/store/CartContext";
+import { UserProgressContextProvider } from "./components/store/UserProgressContext";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Meals />
-    </>
+    <UserProgressContextProvider>
+      <CartContextProvider>
+        <Header />
+        <Meals />
+        <Cart />
+      </CartContextProvider>
+    </UserProgressContextProvider>
   );
 }
 
