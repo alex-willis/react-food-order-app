@@ -6,7 +6,7 @@ export default function Meals() {
 
   useEffect(() => {
     async function fetchMeals() {
-      const response = await fetch("https://xgrdj5-3000.csb.app/meals");
+      const response = await fetch("https://npkmg8-3000.csb.app/meals");
 
       if (!response.ok) {
         // ...

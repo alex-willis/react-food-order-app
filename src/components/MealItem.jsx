@@ -14,7 +14,7 @@ export default function MealItem({ meal }) {
     <li className="meal-item">
       <article>
         <img
-          src={`https://xgrdj5-3000.csb.app/${meal.image}`}
+          src={`https://npkmg8-3000.csb.app/${meal.image}`}
           alt={meal.name}
         />
         <div>
